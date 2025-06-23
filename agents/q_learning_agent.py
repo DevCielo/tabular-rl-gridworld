@@ -6,7 +6,7 @@ class QLearningAgent:
         self.nA = n_actions
         self.nS = n_states
         # Q-table where each entry estimates expected reward of taking action a in state s
-        self.Q = np.zeros((n_state, n_actions))
+        self.Q = np.zeros((n_states, n_actions))
         self.alpha, self.gamma, self.epsilon = alpha, gamma, epsilon
 
     def select_action(self, state):

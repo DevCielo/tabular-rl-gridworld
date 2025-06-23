@@ -2,6 +2,7 @@ import argparse
 import gym
 from envs.learning_path_env import LearningPathEnv
 from agents.q_learning_agent import QLearningAgent
+import numpy as np
 
 def train(env, agent, episodes=500):
     returns = []
